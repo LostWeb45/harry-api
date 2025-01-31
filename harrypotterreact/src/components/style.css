@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background: #F5F5F5;
+}
+
+h1{
+    font-size:92px;
+    margin: 0;
+}
+h2{
+    font-weight: 400;
+    font-size:32px;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid #DEE2E6;
+}
+.header-block{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin: 50px auto;
+}
+input, label {
+    display: block;
+}
+.header-input{
+    display: flex;
+    gap:25px;
+}
+.name-input{
+    width:400px;
+}
+.name-school{
+    width: 215px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    color: #818182;
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-img img{
+    width: 334px;
+    height: 192px;
+}
+select {
+    background: white;
+    cursor: pointer;
+}
+input, select{
+    margin-top:5px;
+    outline: 0;
+    border:1px solid #CED4DA;
+    padding:10px 20px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-size:16px;
+    color:#818182;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:25px;
+    margin-top:50px;
+}
+.card-block{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border:1px solid #DEE2E6;
+}
+.card-text{
+    padding: 25px;
+}
+.card-text h3{
+    font-weight: 700;
+    font-size:24px;
+    margin: 0;
+}
+.card-text p{
+    font-size:20px;
+}

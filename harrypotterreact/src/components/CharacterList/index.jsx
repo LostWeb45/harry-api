@@ -2,7 +2,7 @@ import CharacterCard from "../CharacterCard";
 
 function CharacterList({ characters }) {
   return (
-    <div class="cards">
+    <div className="cards">
       {characters &&
         characters.map((character, id) => {
           return (
@@ -10,7 +10,7 @@ function CharacterList({ characters }) {
               key={id}
               name={character.name}
               age={character.age}
-              schoolid={character.schoolId}
+              school={character.School}
               image={character.image}
             />
           );

@@ -1,4 +1,4 @@
-function SearchBar({ schools }) {
+function SearchBar({ schools, setImputvaue, setinputschool }) {
   return (
     <div className="header-input">
       <label for="input-name">
@@ -8,19 +8,25 @@ function SearchBar({ schools }) {
           name="input-name"
           type="text"
           placeholder="Hermione"
+          onChange={(e) => setImputvaue(e.target.value)}
         />
       </label>
 
       <label for="input-school">
         School
-        <select name="input-school" className="name-school" id="input-school">
-          <option def={"Невозможно"} disabled selected>
-            Choose one
-          </option>
+        <select
+          name="input-school"
+          className="name-school"
+          id="input-school"
+          onChange={(e) => setinputschool(e.target.value)}
+          // onChange={(e) => console.log(e)}
+        >
+          <option selected>Все школы</option>
+
           {schools &&
             schools.map((school) => {
               return (
-                <option key={school.id} value={school.id}>
+                <option key={school.name} value={school.id}>
                   {school.name}
                 </option>
               );

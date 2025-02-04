@@ -8,6 +8,7 @@ function CharacterCard({ name, age, image, school, key }) {
       <div className="card-text" key={key}>
         <h3>{name}</h3>
         <p>House: {school.name}</p>
+        <p>Age: {age}</p>
       </div>
     </div>
   );

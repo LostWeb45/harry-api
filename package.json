@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "exrpess": "^0.0.1-security",
+    "sequelize": "^6.37.5",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
